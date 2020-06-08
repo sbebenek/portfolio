@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import Header from './components/header';
@@ -12,7 +13,8 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-      techIsShown: false
+      techIsShown: false,
+      portfolioIsShown: false
     };
 
     this.handleScroll = this.handleScroll.bind(this);
@@ -33,6 +35,10 @@ export default class App extends React.Component {
       console.log("The technology section has been viewed");
       this.setState({techIsShown: true});
     }
+    if (window.pageYOffset > 1350 && this.state.portfolioIsShown === false) {
+      console.log("The portfolio section has been viewed");
+      this.setState({portfolioIsShown: true});
+    }
   }
 
 
@@ -45,7 +51,7 @@ export default class App extends React.Component {
         <main>
           <IntroductionBody />
           <TechnologiesBody techIsShown={this.state.techIsShown} />
-          <PortfolioPiecesBody />
+          <PortfolioPiecesBody portfolioIsShown={this.state.portfolioIsShown} />
         </main>
         <Footer />
       </div>
