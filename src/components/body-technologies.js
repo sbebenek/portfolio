@@ -36,7 +36,13 @@ export default class BodyTechnologies extends React.Component {
     render() {
         return (
             <div id="technologies" className="technologies-holder">
+                <div className="technologies-right sidebar-title">
+                    <h2>TECHNOLOGIES</h2>
+                    <p>Here are some of the languages and technologies I've worked with</p>
+                    <p><small>This website was built using React</small></p>
+                </div>
                 <div className="technologies-left">
+                    
                     <div className="logo-holder">
                         <TechImage src="tech-logos/html5.png" alt="html5 logo" />
                         <TechImage src="tech-logos/css.png" alt="css logo" />
@@ -57,11 +63,7 @@ export default class BodyTechnologies extends React.Component {
                         <TechImage src="tech-logos/vive.png" alt="htc vive logo" />
                     </div>
                 </div>
-                <div className="technologies-right sidebar-title">
-                    <h2>TECHNOLOGIES</h2>
-                    <p>Here are some of the languages and technologies I've worked with.</p>
-                    <p><small>This website was built using React!</small></p>
-                </div>
+                
             </div>
         )
     }
