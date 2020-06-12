@@ -179,6 +179,7 @@
 }
 
 .logo-holder {
+  direction: ltr;
   
   display: flex;
   flex-direction: row;
