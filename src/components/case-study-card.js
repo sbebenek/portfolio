@@ -23,13 +23,13 @@ export default class ProtfolioCard extends React.Component {
                     intended to track artists who were guitarists and/or bassists, what bands they were in, and keep record of what instruments, amplifiers, and effects pedals 
                     they use. This was intended 
                     because, as a musician personally, these are the tools one would need in order to sound exactly like their favorite artist. However, this was scaled back to 
-                    only artists, bands, and instruments, due to time contraints. That way, the effort could be focused on creating an effective interface to clearly and cleanly 
+                    only artists, bands, and instruments, due to time constraints. That way, the effort could be focused on creating an effective interface to clearly and cleanly 
                     display all the information needed.
                 </p>
                 <img className="portfolio-screenshot mb-4" src="screenshots/gearlog4.png" alt="website screenshot" />
                 <p className="mb-4">
                     It was decided that the focus of the website would be on the Artist's Details page, due to the intention of the website being a place where musicians could go 
-                    to find out what equipment favorite artist used. This page would display the artist's image, a link to their band's page, and a list of their instruments. 
+                    to find out what equipment their favorite artist used. This page would display the artist's image, a link to their band's page, and a list of their instruments. 
                     Users are able to click on an instrument and have that instrument's image and specifications displayed using AJAX, so that the content is filled 
                     dynamically and without needing the page to reload. With this interface, users are able to have all desired information shown on the page at one time, without 
                     having to scroll up or down. In order to organize this information efficiently, the Bootstrap framework was used to style the website.
