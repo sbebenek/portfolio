@@ -39,7 +39,7 @@ export default class BodyTechnologies extends React.Component {
                 <div className="technologies-right sidebar-title">
                     <h2>TECHNOLOGIES</h2>
                     <p>Here are some of the languages and technologies I've worked with</p>
-                    <p><small>This website was built using React</small></p>
+                    <p><small>This website was built using React!</small></p>
                 </div>
                 <div className="technologies-left">
                     

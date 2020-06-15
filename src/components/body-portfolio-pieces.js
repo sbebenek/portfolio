@@ -27,12 +27,15 @@ export default class BodyPortfolioPieces extends React.Component {
         }
     }
     componentDidMount() {
-        $(".slider").slick({
-            centerMode: true,
-            centerPadding: '6rem',
-            dots: true,
-            responsive: true,
-        });
+        
+            $(".slider").slick({
+                centerMode: true,
+                centerPadding: '0.05rem',
+                dots: true,
+                responsive: true
+            });
+        
+
     }
 
     render() {
@@ -49,21 +52,22 @@ export default class BodyPortfolioPieces extends React.Component {
                                 description="Dog Website is a content management system designed to connect dog shelters and fosterers in the GTA with potential adopters. 
                                 Users are able to see a list of dogs up for adoption. Administrators are able to dynamically change the content of the website. This app features a 
                                 front-end built with React, a back end RESTful API server built with Express, and a MySQL database." />
+                            <PortfolioCard title="Fitness Tracker" techUsed="PHP, MySQL" imageSrc="screenshots/fitnesstracker.png" projectlink="/fitnesstracker"
+                                description="FitnessTracker is an all-in-one fitness tracking web app, developed as a web development team project. FitnessTracker’s users are able to track their fitness goals, plan 
+                                jogging routes, get healthy meal suggestions, and find fitness events to attend. Using FitnessTracker’s ‘Find a Bro’ feature, users are also 
+                                able to find workout partners in their area. FitnessTracker was designed for fitness enthusiasts of all kinds - from serious bodybuilders to 
+                                those just thinking about going on their first run. This app was made for anyone who wanted help achieving their fitness dreams." />
                             <PortfolioCard title="MySpotify" techUsed="PHP, JavaScript, jQuery, Spotify API, Seatgeek API"
                                 imageSrc="screenshots/myspotify.png" projectlink="/myspotify" description="MySpotify is a web app anyone with a Spotify account can log 
                                 into to see their top artists. Using the Spotify API, users can pick from a set of timeframes used to calculate their top artists, and can see who 
                                 they’ve been listening to most recently, or over the lifetime of their account. Additionally, the Seatgeek API is used so that users can click on their 
                                 favorite artists to see a list of that artist or group’s upcoming shows, along with a link to buy tickets.
                                 " />
-                            <PortfolioCard title="FitnessTracker" techUsed="PHP, MySQL" imageSrc="screenshots/fitnesstracker.png" projectlink="/fitnesstracker"
-                                description="FitnessTracker is an all-in-one fitness tracking web app. FitnessTracker’s users are able to track their fitness goals, plan 
-                                jogging routes, get healthy meal suggestions, and find fitness events to attend. Using FitnessTracker’s ‘Find a Bro’ feature, users are also 
-                                able to find workout partners in their area. FitnessTracker was designed for fitness enthusiasts of all kinds - from serious bodybuilders to 
-                                those just thinking about going on their first run. This app was made for anyone who wanted help achieving their fitness dreams." />
+
                             <CaseStudyCard title="GearLog" techUsed="C#, .NET, MS Entity Framework" />
 
                             <PortfolioCard title="Five Card Draw" techUsed="HTML, CSS, jQuery" imageSrc="screenshots/fivecarddraw.png" projectlink="/fivecarddraw"
-                                description="Five Card Draw is a web app where you can play the card game of the same name. Try to get as many suit combinations as possible! 
+                                description="Five Card Draw is a web app where you can play the card game of the same name. Players can draw cards from a deck and swap cards in their hand. Try to get as many suit combinations as possible! 
                                 All animations are made with CSS." />
                         </div>
                     </div>

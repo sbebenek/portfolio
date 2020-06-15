@@ -32,7 +32,7 @@ export default class App extends React.Component {
   }
 
   handleScroll() {
-    //console.log(window.pageYOffset);
+    console.log(window.pageYOffset);
     //if the technologies section is in view
     if (window.pageYOffset > 350 && this.state.techIsShown === false) {
       console.log("The technology section has been viewed");

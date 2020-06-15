@@ -36,29 +36,40 @@
   text-decoration: none;
   color: white;
 }
+
 /*.App-header a:hover {
   color: lightgray;
 }*/
+.body {
+  overflow-x: hidden;
+}
 
 .logo-and-title {
-
   margin-left: 3em;
 }
 
 .logo-and-title h1 {
   display: inline;
   font-size: 20px;
-
 }
+
 .logo-and-title span {
   font-size: 12px;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 1em;
 }
+
+.my-logo {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  width: 2rem;
+}
+
 .nav-menu {
   margin-right: 3em;
 }
+
 .nav-menu a:hover {
   color: lightgray;
 }
@@ -82,6 +93,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  direction: ltr;
+
 }
 
 .sidebar-title h2, .sidebar-title p {
@@ -91,8 +104,6 @@
 .sidebar-title p {
   font-size: 24px;
 }
-
-
 
 /*******************************************************************************************************************************************************************************/
 
@@ -142,11 +153,17 @@
   }
 }
 
-.introduction-text img {
+.portrait {
   border-radius: 50%;
   width: 6em;
   height: 6em;
 }
+
+.socialMediaIcon {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
 
 /*******************************************************************************************************************************************************************************/
 
@@ -159,8 +176,6 @@
   display: grid;
   grid-template-columns: 20% 80%;
   direction: rtl;
-
-  
 }
 
 .technologies-left {
@@ -180,7 +195,6 @@
 
 .logo-holder {
   direction: ltr;
-  
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -189,27 +203,25 @@
   width: 70%;
 }
 
-
 .tech-image-holder {
-  width: 140px;
-  height: 140px;
+  width: 8.75rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-right: 2em;
   margin-bottom: 2em;
-  
 }
 
 .tech-image {
   width: inherit;
   height: inherit;
   object-fit: contain;
-  opacity: 0.0;
+  opacity: 0.01;
 }
 
 /*Animation for the drawing of the tech logo images*/
+
 @keyframes imageAppear {
   0% {
     transform: translateX(-50px);
@@ -260,7 +272,7 @@
 }
 
 .slider-holder {
-  width: 90%;
+  width: 94%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -269,17 +281,14 @@
 
 .portfolio-card {
   color: white;
-  width: 100%;
+  width: 50em;
   max-height: 80vh;
   overflow: auto;
   display: flex;
   flex-direction: column;
-
   margin: auto auto;
   text-align: center;
-
   opacity: 0.01;
-
   padding: 1em;
   /*border: 2px solid black;
   box-shadow: 0 8px 16px 0 rgba(54, 42, 42, 0.2);
@@ -291,13 +300,10 @@
   margin-left: auto;
   margin-right: auto;
 }
-/*.portfolio-card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
-}*/
 
 
 /*Animation for the drawing of the portfolio cards*/
+
 @keyframes portfolioAppear {
   0% {
     transform: translateX(50px);
@@ -314,43 +320,54 @@
 }
 
 /* Custom scrollbar reference - https://css-tricks.com/examples/WebKitScrollbars/ */
+
 .portfolio-card::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
+
 .portfolio-card::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
 /* Handle */
+
 .portfolio-card::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: #f3f3f3; 
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-  box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+  background: #f3f3f3;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
+
 ::-webkit-scrollbar-thumb:window-inactive {
-background: #f3f3f3; 
+  background: #f3f3f3;
 }
 
-.slick-slide {
-  padding: 0 150px;
-  outline: none !important;
+.slick-track {
+  display: flex;
+  align-items: center;
 
+}
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+.slick-next {
+  right: 100px;
 }
 
 .slick-dots li button:before {
   color: white;
 }
-.slick-dots li.slick-active button:before {
-  color:white !important;
-}
 
+.slick-dots li.slick-active button:before {
+  color: white !important;
+}
 
 /*******************************************************************************************************************************************************************************/
 
@@ -361,17 +378,235 @@ background: #f3f3f3;
 .footer {
   height: 15vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
   font-size: 24px;
   background-color: rgb(15, 15, 15);
+  text-align: center;
 }
+
 .footer a {
   text-decoration: none;
   color: white;
 }
+
 .footer a:hover {
   color: lightgrey;
+}
+
+/**************************************
+*
+* Media queries
+*
+**************************************/
+@media (max-width: 1800px) {
+  /* slightly smaller screens */
+  .tech-image-holder {
+    width: 5rem;
+
+  }
+}
+
+
+@media (max-width: 800px) {
+  /* For tablets: */
+  .technologies-holder {
+    min-height: 100vh;
+    grid: none;
+    direction: ltr;
+  }
+  .tech-image-holder {
+    width: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+  }
+ 
+  .portfolio-holder {
+    min-height: 100vh;
+    grid: none;
+  }
+
+  .slider-holder {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .portfolio-card-holder {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-right: 2em;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-card {
+    color: white;
+    width: 35rem;
+    max-height: 80vh;
+   
+    /*border: 2px solid black;
+    box-shadow: 0 8px 16px 0 rgba(54, 42, 42, 0.2);
+    border-radius: 0.8em;*/
+    transition: 0.3s;
+  }
+  .portfolio-card p {
+    font-size: 20px;
+  }
+  .portfolio-screenshot {
+    width: 33em;
+  }
+  
+  .slick-slider {
+    display: table !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+  }
+
+  .slick-slide {
+    box-sizing: border-box;
+  }
+
+  
+}
+
+@media (max-width: 450px) {
+  
+  /* For phones: */
+
+  .socialMediaIcon {
+    width: 1.5rem;
+    margin-left: 0.5rem;
+  }
+
+
+  .App-header {
+    background-color: black;
+    height: 20vh; /* introduction section will be 80vh */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .logo-and-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 1em;
+  }
+  .logo-and-title span {
+    margin-left: 0;
+  }
+  .my-logo {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    width: 2rem;
+  }
+  .nav-menu {
+    margin-right: 0;
+    margin-bottom: 0.5em;
+  }
+  .introduction-holder {
+    height: 80vh; /* header will be 20vh */
+
+  }
+
+
+
+  .introduction-text {
+    font-size: 18px;
+  }
+
+  .sidebar-title {
+    padding-top:1.5em;
+    padding-bottom:1em;
+  }
+  .sidebar-title h2 {
+    font-size: 24px;
+  }
+  .sidebar-title p {
+    font-size: 14px;
+  }
+
+  .technologies-holder {
+    min-height: 100vh;
+    grid: none;
+    direction: ltr;
+  }
+  .tech-image-holder {
+    width: 3rem;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+  }
+
+
+  .slider-holder {
+    width: 99vw;
+  }
+  .slick-prev {
+    left: 15px;
+    z-index: 999;
+}
+.slick-next {
+    right: 15px;
+}
+  
+  .portfolio-holder {
+    min-height: 80vh;
+    grid: none;
+  }
+  
+
+
+  .portfolio-card-holder {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-card {
+    color: white;
+    width: 20rem;
+    max-height: 80vh;
+   
+    /*border: 2px solid black;
+    box-shadow: 0 8px 16px 0 rgba(54, 42, 42, 0.2);
+    border-radius: 0.8em;*/
+    transition: 0.3s;
+  }
+  .portfolio-card p {
+    font-size: 12px;
+  }
+  .portfolio-screenshot {
+    width: 18em;
+  }
+
+  .footer {
+    height: 30vh;
+    font-size: 16px;
+  }
+  .footer p {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }

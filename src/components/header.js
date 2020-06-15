@@ -11,6 +11,7 @@ export default class Header extends React.Component {
       <header className="App-header">
         <a href="/">
           <div className="logo-and-title">
+            <img src="logo.gif" className="my-logo" alt="logo" />
             <h1>Sam Bebenek</h1>
             <span><strong>Web Application Developer</strong></span>
           </div>
