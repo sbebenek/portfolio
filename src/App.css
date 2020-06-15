@@ -5,7 +5,7 @@
 * Others in pallete
 * 3. #ED254E red crayola
 * 4. #F9DC5C Naples Yellow
-* 4. #465362 black coral (more of a grey)
+* 5. #465362 black coral (more of a grey)
 
 */
 
@@ -120,16 +120,19 @@
 }
 
 /*contains the canvas and the text content*/
-
-.introduction-container canvas, .introduction-text {
+.introduction-container {
+  height: 100%;
+  width: 100%;
+}
+.introduction-container .introduction-text {
   position: absolute;
 }
 
-.introduction-container canvas {
+#myCanvas {
   /*change border size pixel amount to see canvas area*/
   border: 0px solid pink;
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 
 .introduction-text {
