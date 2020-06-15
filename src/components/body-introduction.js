@@ -14,8 +14,8 @@ export default class BodyIntroduction extends React.Component {
                         <img src="sambebenekportrait.jpg" className="portrait"/>
                         <p>Hello, my name is Sam Bebenek. I am a full-stack web developer from Ontario, Canada.</p>
                         <div>
-                            <a href="https://www.linkedin.com/in/sam-bebenek-487a12159/" title="Sam Bebenek's LinkedIn page"><img src="linkedin-logo.png" alt="linkedin logo" className="socialMediaIcon"/></a>
-                            <a href="https://github.com/sbebenek" title="Sam Bebenek's GitHub account"><img src="github-logo.png" alt="github logo" className="socialMediaIcon"/></a>
+                            <a href="https://www.linkedin.com/in/sam-bebenek-487a12159/" target="_blank"title="Sam Bebenek's LinkedIn page. Opens in a new tab"><img src="linkedin-logo.png" alt="linkedin logo" className="socialMediaIcon"/></a>
+                            <a href="https://github.com/sbebenek" target="_blank" title="Sam Bebenek's GitHub account. Opens in a new tab"><img src="github-logo.png" alt="github logo" className="socialMediaIcon"/></a>
                         </div>
                         </div>
                 </div>
