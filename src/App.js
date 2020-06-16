@@ -38,7 +38,7 @@ export default class App extends React.Component {
       console.log("The technology section has been viewed");
       this.setState({techIsShown: true});
     }
-    if (window.pageYOffset > 1350 && this.state.portfolioIsShown === false) {
+    if (window.pageYOffset > 1000 && this.state.portfolioIsShown === false) {
       console.log("The portfolio section has been viewed");
       this.setState({portfolioIsShown: true});
     }

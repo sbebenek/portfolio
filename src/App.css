@@ -147,6 +147,12 @@
   max-width: 40%;
   opacity: 0.0;
   animation: fadeIn 1s ease-in 0.5s forwards 1;
+
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 10px  rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+
+
 }
 
 @keyframes fadeIn {
@@ -535,7 +541,14 @@
 
 
   .introduction-text {
-    font-size: 18px;
+    font-size: 15px;
+    max-width: 50%;
+
+    
+  }
+  .portrait {
+    width: 5rem;
+    height: 5rem;
   }
 
   .sidebar-title {
