@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
         return (
 
             <footer className="footer">
-               <p><strong>I am currently looking for career opportunities, and would love to join your team. Please send me an email at <a href="mailto:contact@sambebenek.com"><span>contact<code>@</code>sambebenek.com</span></a></strong></p>
+               <p><strong>I am currently looking for career opportunities, and would love to join your team. Please send me an email at <a href="mailto:contact@sambebenek.com"><span><u>contact<code>@</code>sambebenek.com</u></span></a></strong></p>
             </footer>
 
         );
