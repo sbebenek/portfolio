@@ -139,7 +139,7 @@ export default class BodyIntroduction extends React.Component {
                     <canvas id="myCanvas"></canvas>
                     <div className="introduction-text">
                         <img src="sambebenekportrait.jpg" className="portrait" />
-                        <p>Hello, my name is Sam Bebenek. I am a full-stack web developer from Ontario, Canada. I have a background in digital media arts, and want to continue working with new technologies, and pushing for ethics in digital media. </p>
+                        <p>Hello, my name is Sam Bebenek. I am a full-stack web developer from Ontario, Canada. I have a background in digital media arts, and want to continue working with new technologies and pushing for ethics in digital media. </p>
                         <div>
                             <a href="https://www.linkedin.com/in/sam-bebenek-487a12159/" target="_blank" title="Sam Bebenek's LinkedIn page. Opens in a new tab"><img src="linkedin-logo.png" alt="linkedin logo" className="socialMediaIcon" /></a>
                             <a href="https://github.com/sbebenek" target="_blank" title="Sam Bebenek's GitHub account. Opens in a new tab"><img src="github-logo.png" alt="github logo" className="socialMediaIcon" /></a>
