@@ -1,3 +1,12 @@
+# Sam Bebenek Portfolio  
+This project was developed to be Sam Bebenek's web development portfolio, and was developed in React. The website was developed with accesibility practices and is responsive.   
+<br />
+The generative art piece on the landing page is an original piece that incorporates a random walking algorithm, and runs differently every time the website is loaded.  
+<br />
+The portfolio slider was developed with the Slick Carousel JavaScript library.
+
+
+<hr />
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
