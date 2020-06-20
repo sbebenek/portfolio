@@ -57,6 +57,7 @@ export default class BodyTechnologies extends React.Component {
                         <TechImage src="tech-logos/mysql.png" alt="mysql logo" />
                         <TechImage src="tech-logos/bootstrap.png" alt="bootstrap logo" />
                         <TechImage src="tech-logos/java.png" alt="java logo" />
+                        <TechImage src="tech-logos/wordpress.png" alt="wordpress logo" />
                         <TechImage src="tech-logos/github.png" alt="github logo" />
                         <TechImage src="tech-logos/unity.png" alt="unity logo" />
                         <TechImage src="tech-logos/unreal.png" alt="unreal engine 4 logo" />

@@ -27,14 +27,14 @@ export default class BodyPortfolioPieces extends React.Component {
         }
     }
     componentDidMount() {
-        
-            $(".slider").slick({
-                centerMode: true,
-                centerPadding: '0.05rem',
-                dots: true,
-                responsive: true
-            });
-        
+
+        $(".slider").slick({
+            centerMode: true,
+            centerPadding: '0.05rem',
+            dots: true,
+            responsive: true
+        });
+
 
     }
 
@@ -69,6 +69,9 @@ export default class BodyPortfolioPieces extends React.Component {
                             <PortfolioCard title="Five Card Draw" techUsed="HTML, CSS, jQuery" imageSrc="screenshots/fivecarddraw.png" projectlink="/fivecarddraw"
                                 description="Five Card Draw is a web app where you can play the card game of the same name. Players can draw cards from a deck and swap cards in their hand. Try to get as many suit combinations as possible! 
                                 All animations are made with CSS." />
+                            <PortfolioCard title="Boat Game" techUsed="JavaScript" imageSrc="screenshots/boatgame.png" projectlink="/boatgame"
+                                description="Boat Game is a game developed with JavaScript for a fictional seafood restaurant's contest page. Gain points by dodging rocks and collecting 
+                                fish. This game is intentionally impossible to beat, but try to see how far you can get!" />
                         </div>
                     </div>
                     {/*<div className="portfolio-card-holder">
